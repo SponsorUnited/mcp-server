@@ -17,7 +17,7 @@ names of these menus often, so a label may differ a little from what you see.
 | Name | `SponsorUnited` |
 | MCP server URL | `https://mcp.sponsorunited.ai/mcp` |
 | Authentication | OAuth |
-| OAuth client ID | `__PROD_CHATGPT_CLIENT_ID__` |
+| OAuth client ID | `3er1k8b9pb15b7981std2m2nv1` |
 | OAuth client secret | leave empty |
 
 ## 1. Turn on developer mode

@@ -21,7 +21,7 @@ port before you sign in. Open your Codex settings file, `~/.codex/config.toml`
 url = "https://mcp.sponsorunited.ai/mcp"
 
 [mcp_servers.sponsorunited.oauth]
-client_id = "__PROD_CODEX_CLIENT_ID__"
+client_id = "148frlhlclr4ghttb0tqv18q9"
 callback_port = 53282
 ```
 
