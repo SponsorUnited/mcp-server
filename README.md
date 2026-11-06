@@ -25,30 +25,30 @@ Run this in your terminal:
 claude plugin marketplace add SponsorUnited/mcp-server
 ```
 
-You should see `✔ Successfully added marketplace: sponsorunited (declared in user settings)`.
+You should see `✔ Successfully added marketplace: sponsorunited-mcp (declared in user settings)`.
 
 ### 2. Install the plugin
 
 ```bash
-claude plugin install sponsorunited@sponsorunited
+claude plugin install sponsorunited@sponsorunited-mcp
 ```
 
-You should see `✔ Successfully installed plugin: sponsorunited@sponsorunited (scope: user)`.
+You should see `✔ Successfully installed plugin: sponsorunited@sponsorunited-mcp (scope: user)`.
 
 You can also do steps 1 and 2 inside Claude Code: type
 `/plugin marketplace add SponsorUnited/mcp-server`, then
-`/plugin install sponsorunited@sponsorunited`.
+`/plugin install sponsorunited@sponsorunited-mcp`.
 
 ### 3. Sign in
 
 1. Start Claude Code: run `claude`.
 2. Type `/mcp` and press Enter.
-3. Pick the `sponsorunited` server, then pick **Authenticate**.
+3. Pick the `plugin:sponsorunited:sponsorunited` server, then pick **Authenticate**.
 4. A browser page opens on `login.sponsorunited.ai`. Sign in with your
    SponsorUnited email and password.
 5. When the page says you are signed in, go back to Claude Code.
 
-`/mcp` now shows `sponsorunited` as connected.
+`/mcp` now shows `plugin:sponsorunited:sponsorunited` as connected.
 
 ### 4. Try it
 
@@ -58,13 +58,14 @@ Ask Claude Code something like:
 
 ## Good to know
 
-- **You stay signed in.** You only sign in again if you don't use it for 30 days.
+- **You stay signed in.** Sign-in lasts up to 30 days.
 - **Changed your SponsorUnited password?** Access stops within 15 minutes.
-  Sign in again with the new password: `/mcp`, pick `sponsorunited`, then
-  **Authenticate**.
-- **Sign out:** `/mcp`, pick `sponsorunited`, then **Clear authentication**.
-- **Get updates:** `claude plugin marketplace update sponsorunited`.
-- **Remove it:** `claude plugin uninstall sponsorunited@sponsorunited`.
+  Sign in again with the new password: `/mcp`, pick `plugin:sponsorunited:sponsorunited`,
+  then **Authenticate**.
+- **Sign out:** `/mcp`, pick `plugin:sponsorunited:sponsorunited`, then
+  **Clear authentication**.
+- **Get updates:** `claude plugin marketplace update sponsorunited-mcp && claude plugin update sponsorunited@sponsorunited-mcp`, then restart Claude Code.
+- **Remove it:** `claude plugin uninstall sponsorunited@sponsorunited-mcp`.
 
 ## If something goes wrong
 
@@ -73,7 +74,7 @@ Ask Claude Code something like:
 | The browser shows an error about port `53281` or the page never loads | Another program is using port 53281. Close it, or restart your computer, then sign in again. |
 | The sign-in page says your email or password is wrong | Use the same email and password you use on sponsorunited.com. If you can't sign in there either, reset your password on sponsorunited.com first. |
 | The sign-in page asks for a code | Check your email for a code from SponsorUnited and type it in. |
-| `/mcp` shows `sponsorunited` as failed | Pick it and choose **Authenticate** again. |
+| `/mcp` shows `plugin:sponsorunited:sponsorunited` as failed | Pick it and choose **Authenticate** again. |
 
 Still stuck? Contact your SponsorUnited account team.
 
@@ -94,3 +95,6 @@ with no secret. Sign-in uses OAuth with PKCE. Check your changes with:
 ```bash
 claude plugin validate --strict . && claude plugin validate --strict ./plugins/sponsorunited
 ```
+
+Bump `version` in `plugins/sponsorunited/.claude-plugin/plugin.json` with every
+change. Installed copies only update when the version changes.

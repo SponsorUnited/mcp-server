@@ -48,7 +48,7 @@ reopen the app.
 
 ## Good to know
 
-- **You stay signed in.** You only sign in again if you don't use it for 30 days.
+- **You stay signed in.** Sign-in lasts up to 30 days.
 - **Changed your SponsorUnited password?** Access stops within 15 minutes. Go to
   **Settings** > **Connectors** > **SponsorUnited** and connect again.
 - **Sign out:** **Settings** > **Connectors** > **SponsorUnited** > **Disconnect**.
