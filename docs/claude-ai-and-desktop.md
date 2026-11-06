@@ -16,7 +16,7 @@ then use it too, because they share your Claude account's connectors.
 | --- | --- |
 | Name | `SponsorUnited` |
 | Remote MCP server URL | `https://mcp.sponsorunited.ai/mcp` |
-| OAuth Client ID | `__PROD_CLAUDE_CLIENT_ID__` |
+| OAuth Client ID | `2qlhv32rigab3300b8b541p074` |
 | OAuth Client Secret | leave empty |
 
 ## Add the connector

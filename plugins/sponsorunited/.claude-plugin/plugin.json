@@ -1,6 +1,6 @@
 {
   "name": "sponsorunited",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use SponsorUnited data in Claude Code. Sign in with your SponsorUnited email and password.",
   "author": {
     "name": "SponsorUnited"

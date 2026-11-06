@@ -4,7 +4,7 @@
       "type": "http",
       "url": "https://mcp.sponsorunited.ai/mcp",
       "oauth": {
-        "clientId": "__PROD_CLAUDE_CODE_CLIENT_ID__",
+        "clientId": "44n6j8eij9hnli0of32dd6d5b2",
         "callbackPort": 53281
       }
     }
