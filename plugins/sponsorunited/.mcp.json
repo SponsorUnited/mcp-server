@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "sponsorunited": {
+      "type": "http",
+      "url": "https://mcp.sponsorunited.ai/mcp",
+      "oauth": {
+        "clientId": "__PROD_CLAUDE_CODE_CLIENT_ID__",
+        "callbackPort": 53281
+      }
+    }
+  }
+}

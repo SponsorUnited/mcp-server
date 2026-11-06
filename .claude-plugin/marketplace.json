@@ -1,0 +1,14 @@
+{
+  "name": "sponsorunited",
+  "description": "SponsorUnited plugins for Claude Code",
+  "owner": {
+    "name": "SponsorUnited"
+  },
+  "plugins": [
+    {
+      "name": "sponsorunited",
+      "source": "./plugins/sponsorunited",
+      "description": "Use SponsorUnited data in Claude Code. Sign in with your SponsorUnited email and password."
+    }
+  ]
+}
